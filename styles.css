@@ -1,0 +1,30 @@
+.main-banner{
+    background-image: url('./assets/BG-main.jpg');
+}
+
+.solution-banner{
+    background-image: url('./assets/BG-second.jpg');
+}
+
+.svg-red{
+    filter: invert(63%) sepia(25%) saturate(4584%) hue-rotate(319deg) brightness(97%) contrast(106%);
+}
+
+.values-banner{
+    background-image: url('./assets/BG-third.jpg');
+}
+
+.partner-banner{
+    background-image: url('./assets/BG-fourth.jpg');
+}
+
+.blog-banner{
+    background-image: url('./assets/BG-fifth.jpg');
+}
+
+@media screen and (max-width: 640px) {
+    .border-partners {
+      border-bottom-width: 1px;
+      border-top-width: 1px;
+    }
+  }
