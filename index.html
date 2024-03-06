@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Data Superheroes </title>
+</head>
+<body class="bg-[#131517]">
+    <header class="w-full">
+        <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
+            <div class="flex-1 hidden lg:block font-semibold text-[40px]">
+                <img src="./assets/logo_big.png" width="300" />
+                <!-- <div style="color: #FF6565 ;">Data</div>
+                <div class="-mt-5 text-white">Superheroes <span style="margin-left: -25px;">.ai</span></div> -->
+            </div>
+            <div class="flex-1  lg:hidden font-semibold ">
+                <img src="./assets/logo_big.png" width="150" />
+                <!-- <div style="color: #FF6565 ;">Data</div>
+                <div class="-mt-5 text-white">Superheroes <span style="margin-left: -25px;">.ai</span></div> -->
+            </div>
+            <a href="#solutions" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Solutions</a>
+            <a href="#values" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Values</a>
+            <a href="./blog.html" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Blog</a>
+            <a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Contact Us</a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-white p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="w-full">
+        <div class=" px-10 py-20 lg:py-32 lg:px-14 lg:text-7xl text-4xl text-white main-banner bg-cover bg-bottom w-full">
+            <p>Empowering Insights:</p>
+            <p class="my-1">Your Premier Partner</p>
+            <p>in Data Solutions</p>
+            <div class="lg:text-[30px] text-xl font-light my-10">Make Data-Driven Decisions for </br> Your Business</div>
+            <button class="text-base font-light bg-[#FF6565] py-4 px-6 rounded-lg text-black">Learn More</button>
+        </div>
+        <div id="solutions" class="lg:px-60 py-10 solution-banner bg-cover bg-center">
+            <div class=" flex flex-col lg:flex-row lg:space-x-6 space-y-2 mb-2 lg:mb-6 items-center">
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px] ">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/datawarehouse.svg" alt="datawarehouse-icon" class="svg-red" width="70px" />
+                            <div class="text-[#889BE6] text-xl">Data Warehousing</div>
+                            <p class="text-white font-light mt-2 text-sm">
+                                Every business owns an abundant amount of data across diverse locations. Whether your data resides on-premise or in the Cloud, we specialise in connecting, integrating, and optimising all data points. Streamline your data journey with us for meaningful insights and enhanced decision-making.
+                            </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px] ">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/data-economy-finance-2-svgrepo-com.svg" alt="business-icon" width="70px" />
+                            <div class="text-[#889BE6] text-xl">Business Intelligence</div>
+                                <p class="text-white font-light mt-2 text-sm">
+                                    As a data consulting firm, we assist clients in unlocking the power of decision making and transforming them into insight-driven organizations. By choosing the right BI tool for your needs we build automated analytical reports and agile BI systems.
+                                </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px]">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/machine-learning-01-svgrepo-com.svg" alt="machine-icon" width="70px" />
+                            <div class="text-[#889BE6] text-xl">Machine Learning</div>
+                            <p class="text-white font-light mt-2 text-sm">
+                                Harness the power of predictive analytics, intelligent automation, and data-driven insights. Our tailored machine learning services empower you to stay ahead in a rapidly evolving landscape, making informed decisions and unlocking new realms of efficiency and innovation.
+                            </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex flex-col lg:flex-row lg:space-x-6 space-y-2 mb-2 lg:mb-6 items-center">
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px] ">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/db-copy-svgrepo-com.svg" alt="data-icon" width="70px" />
+                            <div class="text-[#889BE6] text-xl">Data Migration</div>
+                            <p class="text-white font-light mt-2 text-sm">
+                                Whether you're moving to the cloud or consolidating databases, we ensure a smooth, secure, and efficient migration process. Our team meticulously plans, executes, and validates every step, minimizing downtime and ensuring your data retains its integrity and accessibility in its new environment.
+                            </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px] ">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/data_engineering2.svg" alt="data-engine-icon"  width="70px" />
+                            <div class="text-[#889BE6] text-xl">Data Engineering</div>
+                                <p class="text-white font-light mt-2 text-sm">
+                                    Elevate your data infrastructure by designing robust data architectures to building scalable pipelines, we specialize in optimizing the entire data lifecycle. Our expert team ensures efficient data collection, processing, and storage, transforming raw information into actionable insights. 
+                                </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1B1C1E] p-4 rounded-lg w-[300px] h-[320px]">
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <img src="./assets/market_research.svg" alt="research-icon"  width="70px" />
+                            <div class="text-[#889BE6] text-xl">Market Research</div>
+                            <p class="text-white font-light mt-2 text-sm">
+                                Understand your audience by analyzing consumer perception. Learn not only what drives preferences and opinion, but also any potential problems your customers face. Our Market Research will be your compass guiding your company toward meaningful connections and informed decisions.  
+                            </p>
+                        </div>
+                        <div class="border-b-4 border-gray-500"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="values" class="lg:px-60 lg:py-40 px-10 py-20 values-banner bg-cover bg-center text-white">
+            <div class="text-3xl font-semibold">We Take Pride in Our Values</div>
+            <p>Every decision we make is based on these principles</p>
+            <ol class="mt-10 pl-3 text-base lg:text-xl space-y-2">
+                <li>1. We promote integrity and transparency in our thinking and in our culture</li>
+                <li>2. We drive success through innovation and continuous improvement</li>
+                <li>3. We work together, achieve together, party together</li>
+                <li>4. We prioritize sustainability, respecting clients, society, and the planet we call home</li>
+                <li>5. We take actions for changing the world we live in</li>
+            </ol>
+        </div>
+        <div class=" lg:px-14 bg-[#141316]">
+            <div class="lg:grid lg:grid-cols-10 place-content-center content-center text-center text-white border border-gray-400">
+                <div class="lg:col-span-2 lg:text-left text-center mx-auto py-3 text-2xl ">Our </br> Partners</div>
+                <div class="lg:col-span-2 lg:border-x border-gray-400 py-3 border-partners">
+                    <img src="./assets/OTE.png" class="mx-auto" alt="ote-icon"  width="90px" />
+                </div>
+                <div class="lg:col-span-2 py-3">
+                    <img src="./assets/Coca Cola2.png" class="mx-auto" alt="coca-icon"  width="90px" />
+                </div>
+                <div class="lg:col-span-2 lg:border-x border-gray-400 py-3 border-partners">
+                    <img src="./assets/mara_logo.JPG" class="mx-auto" alt="mara-icon"  width="90px" />
+                </div>
+                <div class="lg:col-span-2 py-3 text-2xl">Velo.</br>City</div>
+            </div>
+            <div class="lg:grid lg:grid-cols-10 place-content-center content-center text-center text-white border-x border-b border-gray-400">
+                <div class="lg:col-span-6 lg:text-4xl text-2xl lg:border-r border-gray-400 px-10 pt-[300px] pb-20 partner-banner bg-cover bg-center">
+                    Are You Ready to Accelerate</br>Your Business?
+                </div>
+                <div class="lg:text-lg text-base text-gray-400 py-10 lg:col-span-4 text-left lg:px-32 px-5">
+                    Your data is like a book with hidden stories from different sources and sectors. We help you uncover these secrets to boost your organization. Our BI solutions analyze your data, showing customer behavior and new opportunities. Easily track your performance and get useful insights through simple and interactive reports. Elevate your organization with the power of data analysis.
+                </div>  
+            </div>
+        </div>
+        <footer class="bg-[#141316]">
+            <div class="px-10 lg:px-20 py-10 lg:grid lg:grid-cols-10 text-white">
+                <div class="lg:col-span-4">
+                    <div class="text-2xl mb-5">Get in Touch</div>
+                    <p>Filippou, Thessaloniki Greece</p>
+                    <p class="my-5">+357 99060978 </br>
+                        info@datasuperheroes.ai</p>
+                    <div class="text-gray-400">Follow Us On:</div>
+                    <div class="flex flex-row mt-1 space-x-3">
+                        <img src="./assets/linkedin.png" width="30" />
+                        <img src="./assets/fb.png" width="30" />
+                        <img src="./assets/twitter.png" width="30" />
+                    </div>
+                    <img class="hidden lg:block" src="./assets/logo_big.png" width="300" />
+                    <img class="mb-5 lg:hidden" src="./assets/logo_big.png" width="150" />
+                    <a href="./privacy.html" class="hidden lg:block cursor-pointer underline text-sm text-gray-400 mt-3">
+                        Data Superheroes © 2023 | Privacy Policy
+                    </a>
+                </div>
+                <div id="contact" class="lg:col-span-6">
+                    <form class="w-full max-w-lg">
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-first-name">
+                              First Name
+                            </label>
+                            <input class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-first-name" type="text" placeholder="John">
+                          </div>
+                          <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-last-name">
+                              Last Name
+                            </label>
+                            <input class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                          </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                          <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
+                              Email *
+                            </label>
+                            <input required class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-password" type="text" placeholder="email@mail.com">
+                          </div>
+                          <div class="w-full mt-4 px-3">
+                            <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
+                              Message
+                            </label>
+                            <textarea class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" cols="10" rows="4" ></textarea>
+                            <button class="bg-[#FF6565] border hover:bg-black hover:border hover:text-[#FF6565] border-[#FF6565] mt-5 py-2 rounded w-full text-sm">Send</button>
+                          </div>
+                        </div>
+
+                      </form>
+                      <a href="./privacy.html" class="lg:hidden cursor-pointer underline text-base text-gray-400">
+                        Data Superheroes © 2023 | Privacy Policy
+                    </a>
+                </div>
+                
+            </div>
+        </footer>
+        
+        <!-- component menu mobile -->
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black overflow-y-auto">
+			<div class="flex items-center mb-8">
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-3">
+						<a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#solutions">Solutions</a>
+					</li>
+					<li class="mb-1">
+						<a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#values">Values</a>
+					</li>
+					<li class="mb-1">
+						<a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./blog.html">Blog</a>
+					</li>
+					<li class="mb-1">
+						<a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#contact">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<script>
+// Burger menus
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+    </script>
+    </main>
+</body>
+</html>
