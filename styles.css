@@ -28,3 +28,21 @@
       border-top-width: 1px;
     }
   }
+
+.fixed-bottom {
+        position: fixed;
+        bottom: 30px;
+        left: 0; /* You can adjust left or right based on your preference */
+        width: 100%;
+        /*background-color: #fff;  Set background color if needed */
+        text-align: center; /* Center the text horizontally */
+    }
+
+.mg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+.contact-info img {
+    margin-left: 0px; /* Adjust the margin as needed */
+}
