@@ -16,10 +16,11 @@
                 <img src="./assets/logo_big.png" width="150" /> 
             </a>
             <div class="flex-1"></div>
+            <a href="./index.html#home" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Home</a>
             <a href="./index.html#solutions" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Solutions</a>
             <a href="./index.html#values" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Values</a>
             <a href="./blog.html" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Blog</a>
-            <a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Contact Us</a>
+            <!--<a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Contact Us</a>-->
             <div class="lg:hidden">
                 <button class="navbar-burger flex items-center text-white p-3">
                     <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -68,18 +69,22 @@
         <div class="mt-8 text-white">Contact Us:</div>
         <div class="mt-4 text-gray-500"> If you have questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:info@dataspace.com">info@dataspace.com</a></div>
     </main>
-    <footer class="bg-[#141316]">
+    <!--<footer class="bg-[#141316]">
       <div class="px-10 lg:px-20 py-10 lg:grid lg:grid-cols-10 text-white">
           <div class="lg:col-span-4">
               <div class="text-2xl mb-5">Get in Touch</div>
-              <p>Filippou, Thessaloniki Greece</p>
-              <p class="my-5">+357 99060978 </br>
-                  info@datasuperheroes.ai</p>
+              <p>Nicou Demetriou Larnaca, Cyprus</p>
+                    <p class="my-5">
+                        +357 99060978 
+                        <div class="flex flex-row mt-1 space-x-3">
+                            <img src="./assets/phone.png" width="30"/>                         
+                            <img src="./assets/whatsapp.png" width="30" />
+                        </div>
+                      </br> info@datasuperheroes.ai </br> </br> </p>
               <div class="text-gray-400">Follow Us On:</div>
               <div class="flex flex-row mt-1 space-x-3">
-                  <img src="./assets/linkedin.png" width="30" />
-                  <img src="./assets/fb.png" width="30" />
-                  <img src="./assets/twitter.png" width="30" />
+                <a href="https://www.linkedin.com/company/datasuperheroes/">
+                  <img src="./assets/linkedin.png" width="30"/></a>
               </div>
               <img class="hidden lg:block" src="./assets/logo_big.png" width="300" />
               <img class="mb-5 lg:hidden" src="./assets/logo_big.png" width="150" />
@@ -88,19 +93,19 @@
               </a>
           </div>
           <div id="contact" class="lg:col-span-6">
-              <form class="w-full max-w-lg">
+                <form name="submit-to-google-sheet" method="post" class="w-full max-w-lg">
                   <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-first-name">
-                        First Name
+                        First Name *
                       </label>
-                      <input class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-first-name" type="text" placeholder="John">
+                      <input required class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-first-name" type="text" placeholder="John">
                     </div>
                     <div class="w-full md:w-1/2 px-3">
                       <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-last-name">
                         Last Name
                       </label>
-                      <input class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                      <input class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
                     </div>
                   </div>
                   <div class="flex flex-wrap -mx-3 mb-6">
@@ -108,22 +113,21 @@
                       <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
                         Email *
                       </label>
-                      <input required class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-password" type="text" placeholder="email@mail.com">
+                      <input required class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-password" type="text" placeholder="email@mail.com">
                     </div>
                     <div class="w-full mt-4 px-3">
                       <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
                         Message
                       </label>
-                      <textarea class="appearance-none block w-full bg-black text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" cols="10" rows="4" ></textarea>
+                      <textarea class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" cols="10" rows="4" ></textarea>
                       <button class="bg-[#FF6565] border hover:bg-black hover:border hover:text-[#FF6565] border-[#FF6565] mt-5 py-2 rounded w-full text-sm">Send</button>
                     </div>
                   </div>
-
                 </form>
                 <a href="./privacy.html" class="lg:hidden cursor-pointer underline text-base text-gray-400">
                   Data Superheroes © 2023 | Privacy Policy
               </a>
-          </div>
+          </div>-->
           
       </div>
   </footer>
@@ -141,17 +145,20 @@
         <div>
           <ul>
             <li class="mb-3">
-              <a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#solutions">Solutions</a>
+              <a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#home">Home</a>
             </li>
             <li class="mb-1">
-              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#values">Values</a>
+              <a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#solutions">Solutions</a>
+            </li>
+            <li class="mb-1">
+              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#values">Values</a>
             </li>
             <li class="mb-1">
               <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./blog.html">Blog</a>
             </li>
-            <li class="mb-1">
-              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#contact">Contact Us</a>
-            </li>
+            <!--<li class="mb-1">
+              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#contact">Contact Us</a>
+            </li>-->
           </ul>
         </div>
       </nav>
@@ -199,5 +206,22 @@
           }
       });
       </script>
+      </main>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyksrYF_hBs94-5N8zjWf3iNdMW8h-CKaXuy_23O6A8SDJWArY65yOOEpIR9EtoA8I/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { msg.innerHTML = "Message sent successfully"
+                            setTimeout(function() {
+                                msg.innerHTML = ""
+                            }, 5000);})
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
 </body>
 </html>
