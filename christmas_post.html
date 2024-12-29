@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog Post 1</title>
+</head>
+<body class="bg-[#131517]">
+    <header>
+        <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
+            <a href="./index.html"class="hidden lg:block font-semibold text-[40px]">
+                <img src="./assets/logo_big.png" width="300" />
+            </a>
+            <a href="./index.html"class=" lg:hidden font-semibold ">
+                <img src="./assets/logo_big.png" width="150" /> 
+            </a>
+            <div class="flex-1"></div>
+            <a href="https://www.datasuperheroes.ai/" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Home</a>
+            <a href="./index.html#solutions" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Solutions</a>
+            <a href="./index.html#values" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Values</a>
+            <a href="./blog.html" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Blog</a>
+            <a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Contact Us</a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-white p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <main class="px-14 py-10 bg-[#131517] text-white">
+        <div class="text-5xl font-bold mb-6">How DataSuperheroes saved Christmas 2024</div>
+        <div class="text-gray-400 mb-6">
+            <p>Published on December 29, 2024</p>
+        </div>
+        <div class="text-gray-200 leading-7 space-y-4">
+            <p>🎅 What happens when Santa’s workshop is buried in chaos?</p>
+            <p>📊 Data Superheroes stepped in to save Christmas—and here’s how!</p>
+            <p>Look how we saved Christmas 2024 through the power of data integration, dashboards, and predictive analytics:</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>📃 Digitized every letter for clarity.</li>
+                <li>📊 Built dashboards for full visibility into operations.</li>
+                <li>🚀 Enabled Santa to track live KPIs on the go.</li>
+                <li>🔮 Helped plan ahead for Christmas 2025 with predictive insights.</li>
+            </ul>
+            <p>🌟 Ready to make your business as efficient as Santa’s workshop?</p>
+            <p></p>
+
+        </div>
+        <div class="mb-6 flex flex-col items-center gap-6">
+            <img src="./assets/xmas1.jpg" alt="Image 1" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas2.png" alt="Image 2" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas3.png" alt="Image 3" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas4.png" alt="Image 4" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas5.png" alt="Image 5" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas6.png" alt="Image 6" class="h-auto rounded shadow-lg" width="600" height="700">
+            <img src="./assets/xmas7.png" alt="Image 7" class="h-auto rounded shadow-lg" width="600" height="700">
+        </div>
+    </main>
+    <footer class="bg-[#141316]">
+      <div class="px-10 lg:px-20 py-10 lg:grid lg:grid-cols-10 text-white">
+          <div class="lg:col-span-4">
+              <div class="text-2xl mb-5">Get in Touch</div>
+              <p>Nicou Demetriou Larnaca, Cyprus</p>
+                    <p class="my-5">
+                        +357 99060978 
+                        <div class="flex flex-row mt-1 space-x-3">
+                            <img src="./assets/phone.png" width="30"/>                         
+                            <img src="./assets/whatsapp.png" width="30" />
+                        </div>
+                      </br> info@datasuperheroes.ai </br> </br> </p>
+              <div class="text-gray-400">Follow Us On:</div>
+              <div class="flex flex-row mt-1 space-x-3">
+                <a href="https://www.linkedin.com/company/datasuperheroes/">
+                  <img src="./assets/linkedin.png" width="30"/></a>
+                <!--  <img src="./assets/linkedin.png" width="30" />-->
+              </div>
+              <img class="hidden lg:block" src="./assets/logo_big.png" width="300" />
+              <img class="mb-5 lg:hidden" src="./assets/logo_big.png" width="150" />
+              <a href="./privacy.html" class="hidden lg:block cursor-pointer underline text-sm text-gray-400 mt-3">
+                  Data Superheroes © 2023 | Privacy Policy
+              </a>
+          </div>
+          <div id="contact" class="lg:col-span-6">
+            <form name="submit-to-google-sheet" method="post" class="w-full max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-first-name">
+                      First Name *
+                    </label>
+                    <input name="FirstName" class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-first-name" type="text" placeholder="John" required>
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-last-name">
+                      Last Name
+                    </label>
+                    <input name="LastName"  class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
+                      Email *
+                    </label>
+                    <input name="Email" class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" id="grid-password" type="text" placeholder="email@mail.com" required>
+                  </div>
+                  <div class="w-full mt-4 px-3">
+                    <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="grid-password">
+                      Message
+                    </label>
+                    <textarea name="Message"  class="appearance-none block w-full bg-black text-white-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500" cols="10" rows="4" ></textarea>
+                    <button class="bg-[#FF6565] border hover:bg-black hover:border hover:text-[#FF6565] border-[#FF6565] mt-5 py-2 rounded w-full text-sm">Send</button>
+                  </div>
+                </div>                    
+              </form>
+              <span id="msg"></span>
+                </form>
+                <a href="./privacy.html" class="lg:hidden cursor-pointer underline text-base text-gray-400">
+                  Data Superheroes © 2023 | Privacy Policy
+              </a>
+          </div>
+          
+      </div>
+  </footer>
+    <!-- Component menu mobile -->
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-6">
+              <a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="https://www.datasuperheroes.ai/">Home</a>
+            </li>
+            <li class="mb-3">
+              <a class=" navbar-close p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#solutions">Solutions</a>
+            </li>
+            <li class="mb-0">
+              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./index.html#values">Values</a>
+            </li>
+            <li class="mb-0">
+              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="./blog.html">Blog</a>
+            </li>
+            <li class="mb-1">
+              <a class="navbar-close block p-4 text-xl font-semibold text-gray-400 hover:text-[#FF6565] rounded" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+  <script>
+  // Burger menus
+      document.addEventListener('DOMContentLoaded', function() {
+          // open
+          const burger = document.querySelectorAll('.navbar-burger');
+          const menu = document.querySelectorAll('.navbar-menu');
+  
+          if (burger.length && menu.length) {
+              for (var i = 0; i < burger.length; i++) {
+                  burger[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+  
+          // close
+          const close = document.querySelectorAll('.navbar-close');
+          const backdrop = document.querySelectorAll('.navbar-backdrop');
+  
+          if (close.length) {
+              for (var i = 0; i < close.length; i++) {
+                  close[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+  
+          if (backdrop.length) {
+              for (var i = 0; i < backdrop.length; i++) {
+                  backdrop[i].addEventListener('click', function() {
+                      for (var j = 0; j < menu.length; j++) {
+                          menu[j].classList.toggle('hidden');
+                      }
+                  });
+              }
+          }
+      });
+      </script>
+      </main>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyksrYF_hBs94-5N8zjWf3iNdMW8h-CKaXuy_23O6A8SDJWArY65yOOEpIR9EtoA8I/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { msg.innerHTML = "Message sent successfully"
+                            setTimeout(function() {
+                                msg.innerHTML = ""
+                            }, 5000);})
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+</html>
