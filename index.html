@@ -7,18 +7,74 @@
     <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Data Superheroes</title>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EY08R1CED7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EY08R1CED7');
-</script>
-
 </head>
+
+<body class="bg-[#131517]">
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-4 px-6 flex justify-between items-center z-50">
+        <span>
+            We use cookies to enhance your experience. By clicking "Accept All", you agree to our use of cookies for analytics and personalization. 
+            <a href="https://www.datasuperheroes.ai/privacy.html" class="underline text-blue-500">Learn more</a>.
+        </span>
+        <div class="space-x-3">
+            <button id="accept-cookies" class="bg-green-500 text-white py-1 px-3 rounded">Accept All</button>
+            <button id="reject-cookies" class="bg-red-500 text-white py-1 px-3 rounded">Decline</button>
+        </div>
+    </div>
+
+    <!-- Google Analytics Script -->
+    <script>
+        function loadGoogleAnalytics() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-EY08R1CED7";
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-EY08R1CED7');
+            };
+        }
+
+        // Handle Consent Logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const banner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('accept-cookies');
+            const rejectBtn = document.getElementById('reject-cookies');
+
+            // Check if consent is already given
+            const consent = localStorage.getItem('cookieConsent');
+            if (consent === 'accepted') {
+                loadGoogleAnalytics();
+                banner.style.display = 'none';
+            } else if (consent === 'declined') {
+                banner.style.display = 'none';
+            }
+
+            // Accept Cookies
+            acceptBtn.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'accepted');
+                loadGoogleAnalytics();
+                banner.style.display = 'none';
+            });
+
+            // Decline Cookies
+            rejectBtn.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'declined');
+                banner.style.display = 'none';
+            });
+        });
+    </script>
+
+    <header class="w-full">
+        <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
+            <!-- Navigation Code Here -->
+        </nav>
+    </header>
+</body>
+
 <body class="bg-[#131517]">
     <header class="w-full">
         <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
