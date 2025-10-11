@@ -73,3 +73,14 @@
 .contact-info img {
     margin-left: 0px; /* Adjust the margin as needed */
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Accessibility focus */
+a:focus, button:focus {
+  outline: 2px solid #FF6565;
+  outline-offset: 2px;
+}

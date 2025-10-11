@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Data Superheroes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Superheroes | Data Consulting, BI & Machine Learning Solutions</title>
+  <meta name="description" content="Unlock the power of data with Data Superheroes: consulting, business intelligence, data engineering, machine learning, artificial intelligence and cloud migration solutions.">
+  <link rel="canonical" href="https://www.datasuperheroes.ai/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Data Superheroes – Unlock the Power of Data">
+  <meta property="og:description" content="Data consulting, BI, machine learning, data engineering and more.">
+  <meta property="og:image" content="https://www.datasuperheroes.ai/assets/logo_big.png">
+  <meta property="og:url" content="https://www.datasuperheroes.ai">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Data Superheroes – Unlock the Power of Data">
+  <meta name="twitter:description" content="Data consulting, BI, machine learning, data engineering and more.">
+  <meta name="twitter:image" content="https://www.datasuperheroes.ai/assets/logo_big.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Data Superheroes",
+    "url": "https://www.datasuperheroes.ai",
+    "logo": "https://www.datasuperheroes.ai/assets/logo_big.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+35799060978",
+      "contactType": "customer service",
+      "areaServed": "CY",
+      "availableLanguage": "en"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/datasuperheroes/"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body class="bg-[#131517]">
@@ -32,19 +75,17 @@
 
             script.onload = function () {
                 window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
+                function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-EY08R1CED7');
             };
         }
 
-        // Handle Consent Logic
         document.addEventListener('DOMContentLoaded', function () {
             const banner = document.getElementById('cookie-banner');
             const acceptBtn = document.getElementById('accept-cookies');
             const rejectBtn = document.getElementById('reject-cookies');
 
-            // Check if consent is already given
             const consent = localStorage.getItem('cookieConsent');
             if (consent === 'accepted') {
                 loadGoogleAnalytics();
@@ -53,14 +94,12 @@
                 banner.style.display = 'none';
             }
 
-            // Accept Cookies
             acceptBtn.addEventListener('click', function () {
                 localStorage.setItem('cookieConsent', 'accepted');
                 loadGoogleAnalytics();
                 banner.style.display = 'none';
             });
 
-            // Decline Cookies
             rejectBtn.addEventListener('click', function () {
                 localStorage.setItem('cookieConsent', 'declined');
                 banner.style.display = 'none';
@@ -68,32 +107,22 @@
         });
     </script>
 
-    <header class="w-full">
-        <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
-            <!-- Navigation Code Here -->
-        </nav>
-    </header>
-</body>
-
-<body class="bg-[#131517]">
+    <!-- HEADER -->
+<!-- HEADER -->
     <header class="w-full">
         <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
             <div class="flex-1 hidden lg:block font-semibold text-[40px]">
-                <img src="./assets/logo_big.png" width="300" />
-                <!-- <div style="color: #FF6565 ;">Data</div>
-                <div class="-mt-5 text-white">Superheroes <span style="margin-left: -25px;">.ai</span></div> -->
+                <img src="./assets/logo_big.png" width="300" alt="Data Superheroes logo"/>
             </div>
-            <div class="flex-1  lg:hidden font-semibold ">
-                <img src="./assets/logo_big.png" width="150" />
-                <!-- <div style="color: #FF6565 ;">Data</div>
-                <div class="-mt-5 text-white">Superheroes <span style="margin-left: -25px;">.ai</span></div> -->
+            <div class="flex-1 lg:hidden font-semibold ">
+                <img src="./assets/logo_big.png" width="150" alt="Data Superheroes mobile logo"/>
             </div>
-            <a href="#solutions" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Solutions</a>
-            <a href="#values" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Values</a>
-            <a href="./blog.html" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Blog</a>
-            <a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565]">Contact Us</a>
+            <a href="#solutions" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565] text-lg">Solutions</a>
+            <a href="#values" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565] text-lg">Values</a>
+            <a href="./blog.html" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565] text-lg">Blog</a>
+            <a href="#contact" class="font-light hidden lg:block cursor-pointer text-[#8A8A8A] hover:text-[#FF6565] text-lg">Contact Us</a>
             <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-white p-3">
+                <button class="navbar-burger flex items-center text-white p-3" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Mobile menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -101,15 +130,17 @@
                 </button>
             </div>
         </nav>
-        
     </header>
+    <!-- MAIN -->
     <main class="w-full">
-        <div class=" px-10 py-20 lg:py-32 lg:px-14 lg:text-7xl text-4xl text-white main-banner bg-cover bg-bottom w-full">
-            <p>Empowering Insights:</p>
+        <!-- HERO -->
+        <div class="px-10 py-20 lg:py-32 lg:px-14 lg:text-7xl text-4xl text-white main-banner bg-cover bg-bottom w-full">
+            <h1>Empowering Insights:</h1>
             <p class="my-1">Your Premier Partner</p>
             <p>in Data Solutions</p>
-            <div class="lg:text-[30px] text-xl font-light my-10">Make Data-Driven Decisions for </br> Your Business</div>
-           <!--<button class="text-base font-light bg-[#FF6565] py-4 px-6 rounded-lg text-black">Learn More</button>--> 
+            <div class="lg:text-[30px] text-xl font-light my-10">
+                Make Data-Driven Decisions for <br> Your Business
+            </div>
         </div>
         <div id="solutions" class="lg:px-60 py-10 solution-banner bg-cover bg-center">
             <div class=" flex flex-col lg:flex-row lg:space-x-6 space-y-2 mb-2 lg:mb-6 items-center">
@@ -189,7 +220,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- VALUES SECTION -->
         <div id="values" class="lg:px-60 lg:py-40 px-10 py-20 values-banner bg-cover bg-center text-white">
             <div class="text-3xl font-semibold">We Take Pride in Our Values</div>
             <p>Every decision we make is based on these principles</p>
@@ -201,20 +232,40 @@
                 <li>5. We take actions for changing the world we live in</li>
             </ol>
         </div>
-        <div class=" lg:px-14 bg-[#141316]">
+
+        <!-- POWER BI EMBED SECTION -->
+        <div id="power bi" class="lg:px-60 lg:py-40 px-10 py-20 values-banner bg-cover bg-center text-white">
+            <h2 class="text-3xl font-semibold mb-8">Explore Our Interactive BI Dashboard</h2>
+            <p class="text-gray-400 mb-10 lg:w-1/2 w-11/12">
+                Take a look at our report to see how data visualization can empower business decisions.
+            </p>
+            <div class="w-full flex justify-center">
+            <iframe 
+            title="Supermarket Dashboard" 
+            width="1310"
+            height="820"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYzIzNDk3YmMtMTNiNi00NTU4LWFhZDQtNmZkYWI1MGIwOTNjIiwidCI6IjFiMWQzOWQ3LTVjZWUtNDk1OS05YWM3LTZkOWNhMzgzNDBkOCIsImMiOjl9"
+            frameborder="0" 
+            allowFullScreen="true">
+            </iframe>
+            </div>
+        </div>
+
+        <!-- PARTNERS SECTION -->
+        <div class="lg:px-14 bg-[#141316]">
             <div class="lg:grid lg:grid-cols-10 place-content-center content-center text-center text-white border border-gray-400">
-                <div class="lg:col-span-2 lg:text-left text-center mx-auto py-3 text-2xl ">Our </br> Partners</div>
-                <div class="lg:col-span-2 lg:border-x border-gray-400 py-6 border-partners">
-                    <img src="./assets/OTE.png" class="mx-auto" alt="ote-icon"  width="90px" />
+                <div class="lg:col-span-2 lg:text-left text-center mx-auto py-8 text-2xl flex items-center justify-center lg:justify-start">Our </br> Partners</div>
+                <div class="lg:col-span-2 lg:border-x border-gray-400 py-8 flex items-center justify-center border-partners">
+                    <img src="./assets/vm_dynamics.png" class="mx-auto" alt="dynamics-icon" width="200px" />
                 </div>
-                <div class="lg:col-span-2 py-4">
-                    <img src="./assets/Coca Cola2.png" class="mx-auto" alt="coca-icon"  width="90px" />
+                <div class="lg:col-span-2 py-8 flex items-center justify-center">
+                    <img src="./assets/Coca Cola2.png" class="mx-auto" alt="coca-icon" width="150px" />
                 </div>
-                <div class="lg:col-span-2 lg:border-x border-gray-400 py-5 border-partners">
-                    <img src="./assets/mara_logo.JPG" class="mx-auto" alt="mara-icon"  width="90px" />
+                <div class="lg:col-span-2 lg:border-x border-gray-400 py-8 flex items-center justify-center border-partners">
+                    <img src="./assets/mara_logo.JPG" class="mx-auto" alt="mara-icon" width="150px" />
                 </div>
-                <div class="lg:col-span-2 lg:border-x border-gray-400 py-3 border-partners">
-                    <img src="./assets/Velocity.png" class="mx-auto" alt="mara-icon"  width="150px" />
+                <div class="lg:col-span-2 lg:border-x border-gray-400 py-8 flex items-center justify-center border-partners">
+                    <img src="./assets/tradeway.png" class="mx-auto" alt="tradeway-icon" width="150px" />
                 </div>
             </div>
             <div class="lg:grid lg:grid-cols-10 place-content-center content-center text-center text-white border-x border-b border-gray-400">
@@ -226,6 +277,7 @@
                 </div>  
             </div>
         </div>
+
         <footer class="bg-[#141316]">
             <div class="px-10 lg:px-20 py-10 lg:grid lg:grid-cols-10 text-white">
                 <div class="lg:col-span-4">
