@@ -17,7 +17,8 @@
     </script>
 
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <meta name="google-site-verification" content="bjEblZLNCAfL4QuMLgKMCVq7-ovsEhZdszJap1ytvWU" />
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="" />
   <!-- Primary Meta Tags -->
   <title>Business Intelligence & Data Analytics Solutions | Data Superheroes</title>
   <meta name="description" content="Data Superheroes - Premier Business Intelligence solutions for Cyprus and Greece. Transform data into actionable insights with our BI services for Cypriot and Greek businesses.">
@@ -124,16 +125,21 @@
     <!-- Google Analytics Script -->
     <script>
         function loadGoogleAnalytics() {
+            if (!window.CONFIG?.GOOGLE_ANALYTICS_ID) {
+                console.warn('Google Analytics ID not configured');
+                return;
+            }
+
             const script = document.createElement('script');
             script.async = true;
-            script.src = "https://www.googletagmanager.com/gtag/js?id=G-EY08R1CED7";
+            script.src = `https://www.googletagmanager.com/gtag/js?id=${window.CONFIG.GOOGLE_ANALYTICS_ID}`;
             document.head.appendChild(script);
 
             script.onload = function () {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-EY08R1CED7');
+                gtag('config', window.CONFIG.GOOGLE_ANALYTICS_ID);
             };
         }
 
@@ -163,7 +169,6 @@
         });
     </script>
 
-    <!-- HEADER -->
 <!-- HEADER -->
     <header class="w-full">
         <nav class="flex flex-row space-x-6 py-1 items-center lg:px-14 px-3 bg-[#131517] w-full">
@@ -514,34 +519,67 @@
     </script>
     </main>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyksrYF_hBs94-5N8zjWf3iNdMW8h-CKaXuy_23O6A8SDJWArY65yOOEpIR9EtoA8I/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => { msg.innerHTML = "Message sent successfully"
-                            setTimeout(function() {
-                                msg.innerHTML = ""
-                            }, 5000);})
-        form.reset()
-        .catch(error => console.error('Error!', error.message))
-    })
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!window.CONFIG?.GOOGLE_SCRIPT_URL) {
+            console.error('Google Script URL not configured');
+            return;
+        }
+
+        const scriptURL = window.CONFIG.GOOGLE_SCRIPT_URL;
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+        
+        if (form) {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => { 
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                })
+                form.reset()
+                .catch(error => console.error('Error!', error.message));
+            });
+        }
+    });
+</script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6773d13caf5bfec1dbe51612/1ige6ilf9';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!window.CONFIG?.TAWK_TO_LINK) {
+            console.warn('Tawk.to link not configured');
+            return;
+        }
+
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src=window.CONFIG.TAWK_TO_LINK;
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    });
 </script>
-    <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+
+<!-- Load Configuration -->
+<script src="config.js"></script>
+<script>
+    // Set Google verification meta tag
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.CONFIG?.GOOGLE_SITE_VERIFICATION) {
+            const meta = document.querySelector('meta[name="google-site-verification"]');
+            if (meta) {
+                meta.content = window.CONFIG.GOOGLE_SITE_VERIFICATION;
+            }
+        }
+    });
+</script>
+
 </body>
 </html>

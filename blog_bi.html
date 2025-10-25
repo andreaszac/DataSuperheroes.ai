@@ -346,20 +346,31 @@
       </script>
       </main>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyksrYF_hBs94-5N8zjWf3iNdMW8h-CKaXuy_23O6A8SDJWArY65yOOEpIR9EtoA8I/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => { msg.innerHTML = "Message sent successfully"
-                            setTimeout(function() {
-                                msg.innerHTML = ""
-                            }, 5000);})
-        form.reset()
-        .catch(error => console.error('Error!', error.message))
-    })
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!window.CONFIG?.GOOGLE_SCRIPT_URL) {
+            console.error('Google Script URL not configured');
+            return;
+        }
+
+        const scriptURL = window.CONFIG.GOOGLE_SCRIPT_URL;
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+        
+        if (form) {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => { 
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                })
+                form.reset()
+                .catch(error => console.error('Error!', error.message));
+            });
+        }
+    });
+</script>
 </body>
 </html>
